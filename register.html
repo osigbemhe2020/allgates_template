@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        font-size: 1em;
+    }
+    body{
+        background-color: rgba(5, 5, 39,0.8)
+    }
+    .container{
+         position: relative;
+         left:33%;
+         width: 33%;
+         background-color: white;
+         margin:20px;
+         padding:10px;
+    }
+    input[type=text] {
+     width: 80%;
+     height: 1.2em;
+     padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+     border: 2px solid rgb(168, 166, 166);
+     border-radius: 4px;
+    }
+    input[type=text]:focus {
+    border: 3px solid rgb(5, 5, 39,);
+    }
+    select {
+      width: 50%;
+      padding: 8px 10px;
+      border: 2px solid rgb(168, 166, 166);
+      border-radius: 4px;
+      background-color:white ;
+    }
+    input[type=submit] {
+    width:40%;
+    background-color: rgb(31, 4, 82);
+    border: none;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    position: relative;
+    left: 25%;
+  }
+    #course{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    label{
+        color:rgb(35, 165, 35); 
+        margin: 4px;
+    }
+</style>
+<body>
+    <div class="container">
+        
+            <form action="submit.php" method="POST">
+            <label>First name:</label><br>
+            <input type="text" name="fname" id="fname"><br>
+            <label>Surname:</label><br>
+            <input type="text" name="Sname" id="Sname"><br>
+            <label>E-mail:</label><br>
+            <input type="text" name="Email" id="E-mail"><br>
+            <label>Whatsapp Phone Number:</label><br>
+            <input type="text" name="Whatsapp" id="Whatsapp"><br>
+            <label>Profession:</label><br>
+            <input type="text" name="pro" id="pro"><br>
+            <label for="course">Choose a course:</label>
+            <select id="course" name="course">
+                  <option value="html">HTML</option>
+                  <option value="css">CSS</option>
+                  <option value="javascript">Javascript</option>
+                  <option value="php">PHP</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label> Why are you studying this course(optional)</label><br>
+            <textarea name="message" rows="6" cols="25">
+            </textarea>
+            <br>
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>
